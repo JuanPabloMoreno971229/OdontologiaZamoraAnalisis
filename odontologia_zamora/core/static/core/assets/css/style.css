@@ -247,7 +247,7 @@ h6 {
 
 
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 
 .navbar {
@@ -368,7 +368,7 @@ h6 {
 
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 
 .mobile-nav-toggle {
@@ -688,7 +688,6 @@ section {
     padding: 30px;
     background: #1977cc;
     border-radius: 4px;
-    text-align: justify;
     color: #fff;
 }
 
@@ -696,6 +695,7 @@ section {
     font-weight: 700;
     font-size: 34px;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .why-us .content p {
@@ -975,6 +975,7 @@ section {
     border: 1px solid #d5e1ed;
     padding: 80px 20px;
     transition: all ease-in-out 0.3s;
+    width: 500px;
 }
 
 .services .icon-box .icon {
@@ -1023,6 +1024,9 @@ section {
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
+}
+.prueba{
+    width: 10px;
 }
 
 .services .icon-box:hover {

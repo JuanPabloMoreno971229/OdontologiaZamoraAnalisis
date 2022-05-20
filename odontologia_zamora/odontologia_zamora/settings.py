@@ -31,13 +31,19 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'core.apps.CoreConfig',
+    'contacto.apps.ContactoConfig',
+    'doctor.apps.DoctorConfig',
+    'especialidad.apps.EspecialidadConfig',
+    'cita.apps.CitaConfig',
+    'Paciente.apps.PacienteConfig'
     
 
 ]
@@ -125,3 +131,13 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+USER_EMAIL = os.environ['USER_MAIL'] = 'noreplyondontozamora@gmail.com'
+USER_PASSWORD = os.environ['USER_PASSWORD'] = 'qwerty12345...'
+USER_EMAIL_PORT = os.environ['USER_EMAIL_PORT'] = '587'
+ 
+EMAIL_HOST = 'smtp.googlemail.com'
+EMAIL_PORT = USER_EMAIL_PORT
+EMAIL_HOST_USER = USER_EMAIL
+EMAIL_HOST_PASSWORD = USER_PASSWORD 
+EMAIL_USE_TLS = True
